@@ -15,6 +15,14 @@ public class Task {
         this.status = status;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getName() {
         return name;
     }
@@ -38,10 +46,10 @@ public class Task {
     @Override
     public String toString() {
         return "Task{" +
-                "name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", status=" + status +
-                ", id=" + id +
+                "name = " + name + '\'' +
+                ", description = " + description + '\'' +
+                ", status = " + status +
+                ", id = " + id +
                 "}"+"\n";
     }
 }

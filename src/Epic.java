@@ -18,7 +18,6 @@ public class Epic extends Task {
 
     public void removeSubtaskIdInEpic(Integer subtaskIdToRemove){
         listSubtaskId.remove(subtaskIdToRemove);
-        System.out.println("Удаление прошло успешно!");
     }
 
     @Override
@@ -46,14 +45,13 @@ public class Epic extends Task {
         super.setStatus(status);
     }
 
-
     @Override
     public String toString() {
         return "Epic{" +
-                "name='" + getName() + '\'' +
-                ", description='" + getDescription() + '\'' +
-                ", status=" +  getStatus() +
-                ", id=" + getId() +
+                "name = " + getName() + '\'' +
+                ", description = " + getDescription() + '\'' +
+                ", status = " +  getStatus() +
+                ", id = " + getId() +
                 "}"+"\n";
     }
 }
